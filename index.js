@@ -37,9 +37,9 @@ function createPerson(name, age, location) {
   }
 }
 
-const person = createPerson('Musa', 19, 'Lekki')
+const musaObj = createPerson('Musa', 19, 'Lekki')
 
-console.log(person)
+console.log(musaObj)
 
 /////3b
 function createJambScores(eng, govt, lit, crk) {
@@ -54,3 +54,19 @@ function createJambScores(eng, govt, lit, crk) {
 const jambScore = createJambScores('70', '85', '82', '94')
 
 console.log(jambScore)
+musaObj.scores = createJambScores(70, 85, 82, 94)
+console.log(musaObj)
+
+const presidentialCandidates = {
+  AAC: 'Omoyele Sowore',
+  ACCORD: 'Christopher Imumolen',
+  APC: 'Bola Ahmed Tinubu',
+  LP: 'Peter Obi',
+  NNPP: 'Rabiu Kwankwaso',
+  PDP: 'Atiku Abubakar',
+}
+for (let x in presidentialCandidates) {
+  console.log(
+    `${presidentialCandidates[x]} is the presidential candidate of ${x}`,
+  )
+}
