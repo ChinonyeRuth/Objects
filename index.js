@@ -57,6 +57,19 @@ console.log(jambScore)
 musaObj.scores = createJambScores(70, 85, 82, 94)
 console.log(musaObj)
 
+//4
+// Using spread syntax
+
+let obj = {
+  key1: 'value1',
+  key2: 'value2',
+}
+let clonedObject = { ...obj }
+console.log(clonedObject)
+// Object { key1: "value1", key2: "value2" }
+
+//5
+
 const presidentialCandidates = {
   AAC: 'Omoyele Sowore',
   ACCORD: 'Christopher Imumolen',
